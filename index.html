@@ -20,15 +20,23 @@
 <div class="box hidden" id="mainBox">
   <h3>Welcome, <span id="userLabel"></span></h3>
 
-  <h4>Upload File</h4>
-  <input type="file" id="fileInput">
-  <button onclick="uploadFile()">Upload</button>
-
   <h4>Files</h4>
   <ul id="fileList"></ul>
 </div>
 
 <!-- Admin Login -->
+  <!-- Admin Panel -->
+<div class="box hidden" id="adminPanel">
+  <h3>📊 Admin Panel</h3>
+
+  <h4>Upload File (Admin Only)</h4>
+  <input type="file" id="adminFile">
+  <button onclick="adminUpload()">Upload</button>
+
+  <h4>Download Tracking</h4>
+  <ul id="logList"></ul>
+</div>
+
 <div class="box hidden" id="adminLogin">
   <h3>Admin Login</h3>
   <input type="text" id="adminId" placeholder="Admin ID">
@@ -46,4 +54,5 @@
 <script src="admin.js"></script>
 </body>
 </html>
+
 
