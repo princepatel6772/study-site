@@ -1,3 +1,5 @@
+alert("app.js loaded");
+
 let currentUser = "";
 
 function login() {
@@ -31,3 +33,4 @@ function download(fileName) {
   localStorage.setItem("logs", JSON.stringify(logs));
   alert("Download recorded (demo)");
 }
+
