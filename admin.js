@@ -1,5 +1,5 @@
-const ADMIN_ID = "admin";
-const ADMIN_PASS = "1234";
+const ADMIN_ID = "9313373707";
+const ADMIN_PASS = "Prince@6772#";
 
 document.getElementById("adminIcon").onclick = () => {
   document.getElementById("adminLogin").classList.toggle("hidden");
@@ -29,3 +29,5 @@ function loadLogs() {
     ul.appendChild(li);
   });
 }
+
+9
