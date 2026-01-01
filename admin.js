@@ -31,3 +31,23 @@ function loadLogs() {
 }
 
 9
+function adminUpload() {
+  const fileInput = document.getElementById("adminFile");
+  if (!fileInput.files.length) {
+    alert("Select a file");
+    return;
+  }
+
+  const file = fileInput.files[0];
+
+  const list = document.getElementById("fileList");
+  const li = document.createElement("li");
+  li.innerHTML = `
+    ${file.name}
+    <button onclick="download('${file.name}')">Download</button>
+  `;
+  list.appendChild(li);
+
+  alert("File added (Admin only)");
+}
+
