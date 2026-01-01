@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#adminIcon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.box {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  margin: 30px auto;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input, button {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #fff;
+  color: #2575fc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

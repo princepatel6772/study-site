@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>📚 Study Portal</h2>
+  <span id="adminIcon">🔒</span>
+</header>
+
+<div class="box" id="loginBox">
+  <h3>Enter Your Name</h3>
+  <input type="text" id="username" placeholder="Your Name">
+  <button onclick="login()">Enter</button>
+</div>
+
+<div class="box hidden" id="mainBox">
+  <h3>Welcome, <span id="userLabel"></span></h3>
+
+  <h4>Upload File</h4>
+  <input type="file" id="fileInput">
+  <button onclick="uploadFile()">Upload</button>
+
+  <h4>Files</h4>
+  <ul id="fileList"></ul>
+</div>
+
+<!-- Admin Login -->
+<div class="box hidden" id="adminLogin">
+  <h3>Admin Login</h3>
+  <input type="text" id="adminId" placeholder="Admin ID">
+  <input type="password" id="adminPass" placeholder="Password">
+  <button onclick="adminLogin()">Login</button>
+</div>
+
+<!-- Admin Panel -->
+<div class="box hidden" id="adminPanel">
+  <h3>📊 Download Tracking</h3>
+  <ul id="logList"></ul>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
